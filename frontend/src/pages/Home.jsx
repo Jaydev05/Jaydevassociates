@@ -63,9 +63,9 @@ const Home = () => {
 
         {/* Content */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
             {/* Logo */}
-            <div className="flex justify-center mb-8 animate-fade-in">
+            <div className="flex justify-center mb-4 animate-fade-in">
               <img
                 src="https://customer-assets.emergentagent.com/job_7e015201-97ad-4ef2-a812-8a1721981a86/artifacts/e0n0q32q_WhatsApp%20Image%202025-08-11%20at%2019.45.27_4b0fb809.jpg"
                 alt="Jaydev Associates Logo"
