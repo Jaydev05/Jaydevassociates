@@ -35,7 +35,7 @@ const Header = () => {
             <img
               src="https://customer-assets.emergentagent.com/job_7e015201-97ad-4ef2-a812-8a1721981a86/artifacts/e0n0q32q_WhatsApp%20Image%202025-08-11%20at%2019.45.27_4b0fb809.jpg"
               alt="Jaydev Associates Logo"
-              className="h-12 w-auto transition-transform duration-300 group-hover:scale-105"
+              className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
 
