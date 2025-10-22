@@ -69,8 +69,8 @@ const Home = () => {
               <img
                 src="https://customer-assets.emergentagent.com/job_7e015201-97ad-4ef2-a812-8a1721981a86/artifacts/e0n0q32q_WhatsApp%20Image%202025-08-11%20at%2019.45.27_4b0fb809.jpg"
                 alt="Jaydev Associates Logo"
-                className="h-52 md:h-40 w-auto" />
-
+                className="h-64 md:h-56 w-auto"
+              />
             </div>
 
             {/* Tagline */}
