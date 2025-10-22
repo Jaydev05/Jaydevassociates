@@ -91,7 +91,7 @@ const Home = () => {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center animate-slide-up-delay-3 !mt-[12px] !mb-[5px] !pt-[24px] !gap-[16px]">
+            <div className="flex flex-col sm:flex-row items-center justify-center animate-slide-up-delay-3 !mt-[5px] !mb-[12px] !pt-[24px] !gap-[16px]">
               <Link
                 to="/contact"
                 className="flex items-center space-x-2 px-8 py-4 bg-[#F5C842] text-black font-semibold rounded-lg hover:bg-[#D4AF37] transition-all duration-300 hover:shadow-lg hover:shadow-[#F5C842]/50 hover:scale-105">
