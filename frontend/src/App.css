@@ -1,34 +1,194 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Black and Gold Theme - Jaydev Associates */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+html {
+    scroll-behavior: smooth;
 }
 
-.App-header {
-    background-color: #0f0f10;
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.App {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    background-color: #000000;
 }
 
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* Smooth Animations */
+@keyframes fade-in {
     from {
-        transform: rotate(0deg);
+        opacity: 0;
     }
     to {
-        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-up-delay-1 {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-up-delay-2 {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    66% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-up-delay-3 {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    75% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.8s ease-out;
+}
+
+.animate-slide-up {
+    animation: slide-up 0.8s ease-out;
+}
+
+.animate-slide-up-delay-1 {
+    animation: slide-up-delay-1 1.2s ease-out;
+}
+
+.animate-slide-up-delay-2 {
+    animation: slide-up-delay-2 1.4s ease-out;
+}
+
+.animate-slide-up-delay-3 {
+    animation: slide-up-delay-3 1.6s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F5C842;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+}
+
+/* Selection Color */
+::selection {
+    background-color: #F5C842;
+    color: #000000;
+}
+
+/* Focus Styles */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #F5C842;
+    outline-offset: 2px;
+}
+
+/* Image Loading */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
     }
 }
