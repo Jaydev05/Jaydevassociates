@@ -29,7 +29,7 @@ const Header = () => {
       }>
 
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-25">
+        <div className="flex items-center justify-between h-25 !shadow-2xs">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img
