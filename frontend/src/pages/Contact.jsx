@@ -35,21 +35,42 @@ const Contact = () => {
       return;
     }
 
-    // Simulate form submission (frontend only)
-    setTimeout(() => {
-      toast({
-        title: 'Success!',
-        description: 'Thank you for contacting us. We will get back to you soon!',
-      });
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
-      });
-      setIsSubmitting(false);
-    }, 1000);
+    // Format message for WhatsApp
+    const whatsappMessage = `*New Contact Form Submission*
+
+*Name:* ${formData.name}
+*Email:* ${formData.email}
+*Phone:* ${formData.phone || 'Not provided'}
+*Subject:* ${formData.subject || 'Not provided'}
+
+*Message:*
+${formData.message}`;
+
+    // Encode message for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // WhatsApp business number
+    const whatsappNumber = '919322021991';
+    
+    // Open WhatsApp with pre-filled message
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+
+    // Show success message
+    toast({
+      title: 'Opening WhatsApp!',
+      description: 'Your message is ready to send via WhatsApp.',
+    });
+
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: '',
+    });
+    
+    setIsSubmitting(false);
   };
 
   return (
