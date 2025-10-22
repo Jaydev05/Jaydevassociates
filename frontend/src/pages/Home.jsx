@@ -79,7 +79,7 @@ const Home = () => {
             </h1>
 
             {/* Main Heading */}
-            <h2 className="text-white text-4xl md:text-6xl font-bold leading-tight animate-slide-up-delay-1">
+            <h2 className="md:text-6xl animate-slide-up-delay-1 !font-bold !text-5xl text-white">
               Trusted Multi-Domain
               <br />
               <span className="text-[#F5C842]">Service Provider</span>
