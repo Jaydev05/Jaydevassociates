@@ -4,53 +4,53 @@ import { ArrowRight, Users, Shield, Building2, Cpu, Home as HomeIcon, CheckCircl
 
 const Home = () => {
   const services = [
-    {
-      icon: Users,
-      title: 'Recruitment Solutions',
-      description: 'Connecting companies with skilled professionals across IT, Healthcare, Manufacturing, and more.',
-      link: '/services#recruitment',
-    },
-    {
-      icon: Shield,
-      title: 'Security Services',
-      description: 'Comprehensive security solutions for hospitals, residential, commercial, and retail establishments.',
-      link: '/services#security',
-    },
-    {
-      icon: Building2,
-      title: 'Facility Management',
-      description: 'Complete facility services including housekeeping, hospitality, canteen management, and gardening.',
-      link: '/services#facility',
-    },
-    {
-      icon: Cpu,
-      title: 'IT Solutions',
-      description: 'Advanced systems including CCTV, access control, attendance management, and tracking solutions.',
-      link: '/services#it',
-    },
-    {
-      icon: HomeIcon,
-      title: 'Real Estate Services',
-      description: 'Property management, leasing, selling, and investment consulting across Maharashtra.',
-      link: '/services#realestate',
-    },
-  ];
+  {
+    icon: Users,
+    title: 'Recruitment Solutions',
+    description: 'Connecting companies with skilled professionals across IT, Healthcare, Manufacturing, and more.',
+    link: '/services#recruitment'
+  },
+  {
+    icon: Shield,
+    title: 'Security Services',
+    description: 'Comprehensive security solutions for hospitals, residential, commercial, and retail establishments.',
+    link: '/services#security'
+  },
+  {
+    icon: Building2,
+    title: 'Facility Management',
+    description: 'Complete facility services including housekeeping, hospitality, canteen management, and gardening.',
+    link: '/services#facility'
+  },
+  {
+    icon: Cpu,
+    title: 'IT Solutions',
+    description: 'Advanced systems including CCTV, access control, attendance management, and tracking solutions.',
+    link: '/services#it'
+  },
+  {
+    icon: HomeIcon,
+    title: 'Real Estate Services',
+    description: 'Property management, leasing, selling, and investment consulting across Maharashtra.',
+    link: '/services#realestate'
+  }];
+
 
   const stats = [
-    { icon: TrendingUp, value: '1+', label: 'Year of Excellence' },
-    { icon: Users, value: '67+', label: 'Happy Clients' },
-    { icon: Award, value: '90%', label: 'Client Satisfaction' },
-    { icon: Target, value: '450km', label: 'Coverage Area' },
-  ];
+  { icon: TrendingUp, value: '1+', label: 'Year of Excellence' },
+  { icon: Users, value: '67+', label: 'Happy Clients' },
+  { icon: Award, value: '90%', label: 'Client Satisfaction' },
+  { icon: Target, value: '450km', label: 'Coverage Area' }];
+
 
   const whyChooseUs = [
-    'Trusted multi-domain service provider',
-    'Experienced team of 12+ professionals',
-    'Pan-India and International coverage',
-    'Available 24/7 for your needs',
-    '90% repeat client rate',
-    'Comprehensive end-to-end solutions',
-  ];
+  'Trusted multi-domain service provider',
+  'Experienced team of 12+ professionals',
+  'Pan-India and International coverage',
+  'Available 24/7 for your needs',
+  '90% repeat client rate',
+  'Comprehensive end-to-end solutions'];
+
 
   return (
     <div className="min-h-screen">
@@ -69,8 +69,8 @@ const Home = () => {
               <img
                 src="https://customer-assets.emergentagent.com/job_7e015201-97ad-4ef2-a812-8a1721981a86/artifacts/e0n0q32q_WhatsApp%20Image%202025-08-11%20at%2019.45.27_4b0fb809.jpg"
                 alt="Jaydev Associates Logo"
-                className="h-32 md:h-40 w-auto"
-              />
+                className="h-32 md:h-40 w-auto" />
+
             </div>
 
             {/* Tagline */}
@@ -91,18 +91,18 @@ const Home = () => {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 animate-slide-up-delay-3">
+            <div className="flex flex-col sm:flex-row items-center justify-center animate-slide-up-delay-3 !my-[5px] !pt-[24px] !gap-[16px]">
               <Link
                 to="/contact"
-                className="flex items-center space-x-2 px-8 py-4 bg-[#F5C842] text-black font-semibold rounded-lg hover:bg-[#D4AF37] transition-all duration-300 hover:shadow-lg hover:shadow-[#F5C842]/50 hover:scale-105"
-              >
+                className="flex items-center space-x-2 px-8 py-4 bg-[#F5C842] text-black font-semibold rounded-lg hover:bg-[#D4AF37] transition-all duration-300 hover:shadow-lg hover:shadow-[#F5C842]/50 hover:scale-105">
+
                 <span>Get Started</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 to="/services"
-                className="flex items-center space-x-2 px-8 py-4 bg-transparent border-2 border-[#F5C842] text-[#F5C842] font-semibold rounded-lg hover:bg-[#F5C842] hover:text-black transition-all duration-300"
-              >
+                className="flex items-center space-x-2 px-8 py-4 bg-transparent border-2 border-[#F5C842] text-[#F5C842] font-semibold rounded-lg hover:bg-[#F5C842] hover:text-black transition-all duration-300">
+
                 <span>Our Services</span>
               </Link>
             </div>
@@ -119,13 +119,13 @@ const Home = () => {
               return (
                 <div
                   key={index}
-                  className="text-center space-y-4 p-6 rounded-xl bg-black/40 border border-[#F5C842]/20 hover:border-[#F5C842]/60 transition-all duration-300 hover:scale-105"
-                >
+                  className="text-center space-y-4 p-6 rounded-xl bg-black/40 border border-[#F5C842]/20 hover:border-[#F5C842]/60 transition-all duration-300 hover:scale-105">
+
                   <Icon className="w-10 h-10 text-[#F5C842] mx-auto" />
                   <div className="text-4xl font-bold text-[#F5C842]">{stat.value}</div>
                   <div className="text-gray-400 text-sm font-medium">{stat.label}</div>
-                </div>
-              );
+                </div>);
+
             })}
           </div>
         </div>
@@ -149,8 +149,8 @@ const Home = () => {
               return (
                 <div
                   key={index}
-                  className="group bg-gradient-to-br from-[#1a1a1a] to-black p-8 rounded-xl border border-[#F5C842]/20 hover:border-[#F5C842]/60 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#F5C842]/10"
-                >
+                  className="group bg-gradient-to-br from-[#1a1a1a] to-black p-8 rounded-xl border border-[#F5C842]/20 hover:border-[#F5C842]/60 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#F5C842]/10">
+
                   <div className="w-16 h-16 bg-[#F5C842]/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#F5C842]/20 transition-colors duration-300">
                     <Icon className="w-8 h-8 text-[#F5C842]" />
                   </div>
@@ -160,13 +160,13 @@ const Home = () => {
                   <p className="text-gray-400 leading-relaxed mb-6">{service.description}</p>
                   <Link
                     to={service.link}
-                    className="inline-flex items-center space-x-2 text-[#F5C842] font-semibold hover:underline"
-                  >
+                    className="inline-flex items-center space-x-2 text-[#F5C842] font-semibold hover:underline">
+
                     <span>Learn More</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
-                </div>
-              );
+                </div>);
+
             })}
           </div>
         </div>
@@ -186,12 +186,12 @@ const Home = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {whyChooseUs.map((item, index) => (
-                <div key={index} className="flex items-start space-x-4 p-4 rounded-lg bg-black/40 border border-[#F5C842]/20 hover:border-[#F5C842]/60 transition-all duration-300">
+              {whyChooseUs.map((item, index) =>
+              <div key={index} className="flex items-start space-x-4 p-4 rounded-lg bg-black/40 border border-[#F5C842]/20 hover:border-[#F5C842]/60 transition-all duration-300">
                   <CheckCircle className="w-6 h-6 text-[#F5C842] flex-shrink-0 mt-1" />
                   <span className="text-gray-300">{item}</span>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -210,8 +210,8 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/contact"
-                className="flex items-center space-x-2 px-8 py-4 bg-[#F5C842] text-black font-semibold rounded-lg hover:bg-[#D4AF37] transition-all duration-300 hover:shadow-lg hover:shadow-[#F5C842]/50 hover:scale-105"
-              >
+                className="flex items-center space-x-2 px-8 py-4 bg-[#F5C842] text-black font-semibold rounded-lg hover:bg-[#D4AF37] transition-all duration-300 hover:shadow-lg hover:shadow-[#F5C842]/50 hover:scale-105">
+
                 <span>Contact Us</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
@@ -219,16 +219,16 @@ const Home = () => {
                 href="https://wa.me/919322021991"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-8 py-4 bg-[#25D366] text-white font-semibold rounded-lg hover:bg-[#1ea952] transition-all duration-300 hover:scale-105"
-              >
+                className="flex items-center space-x-2 px-8 py-4 bg-[#25D366] text-white font-semibold rounded-lg hover:bg-[#1ea952] transition-all duration-300 hover:scale-105">
+
                 <span>Chat on WhatsApp</span>
               </a>
             </div>
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Home;
