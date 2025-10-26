@@ -181,7 +181,7 @@ const Home = () => {
                 Why Choose <span className="text-[#F5C842]">Jaydev Associates</span>?
               </h2>
               <p className="text-gray-400 text-lg">
-                Your trusted partner for operational excellence, efficiency, and security
+                Your trusted partner for operational excellence, efficiency, and security SECURITY
               </p>
             </div>
 
