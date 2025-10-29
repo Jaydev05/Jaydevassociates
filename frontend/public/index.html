@@ -1,86 +1,58 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <!-- <meta name="description" content="A product of emergent.sh" /> -->
-        <meta name="description" content="Jaydev Associates offers expert Recruitment, Security, Facility Management, IT Solutions, and Real Estate Services across Maharashtra, India. Your trusted partner for professional and reliable business solutions." />
-        <meta name="google-site-verification" content="0SAmOt1uKe6Ixt0aY0bXVejfu4IfKlC5XXxBvuNGrFU" />
-        <meta name="keywords" content="Jaydev Associates, recruitment agency Maharashtra, security services Raigad, facility management Mumbai, IT solutions India, real estate services Maharashtra, manpower supply, property management, business solutions, professional services India" />
-        <meta property="og:title" content="Jaydev Associates | Professional Business Solutions in Maharashtra" />
-<meta property="og:description" content="Expert services in Recruitment, Security, Facility Management, IT Solutions, and Real Estate. Trusted by leading companies across India." />
-<meta property="og:image" content="https://www.jaydevassociates.com/jaydev-logo1.png" />
-<meta property="og:url" content="https://www.jaydevassociates.com/" />
-<meta property="og:type" content="website" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Jaydev Associates offers expert Recruitment, Security, Facility Management, IT Solutions, and Real Estate Services across Maharashtra, India. Your trusted partner for professional and reliable business solutions." />
+  <meta name="google-site-verification" content="0SAmOt1uKe6Ixt0aY0bXVejfu4IfKlC5XXxBvuNGrFU" />
+  <meta name="keywords" content="Jaydev Associates, recruitment agency Maharashtra, security services Raigad, facility management Mumbai, IT solutions India, real estate services Maharashtra, manpower supply, property management, business solutions, professional services India" />
 
-        <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-        <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  <!-- Open Graph Meta Tags (for social preview) -->
+  <meta property="og:title" content="Jaydev Associates | Professional Business Solutions in Maharashtra" />
+  <meta property="og:description" content="Expert services in Recruitment, Security, Facility Management, IT Solutions, and Real Estate. Trusted by leading companies across India." />
+  <meta property="og:image" content="https://www.jaydevassociates.com/favicon-32x32.png" />
+  <meta property="og:url" content="https://www.jaydevassociates.com/" />
+  <meta property="og:type" content="website" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    
-        <title>Jaydev Associates | Recruitment, Security, Facility Management, IT & Real Estate Services in Maharashtra</title>
+  <title>Jaydev Associates | Recruitment, Security, Facility Management, IT & Real Estate Services in Maharashtra</title>
 
-    <!-- Favicon and app icons -->
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+  <!-- Favicon and app icons -->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
 
-<!-- Open Graph (social preview) -->
-        <meta property="og:image" content="https://www.jaydevassociates.com/jaydev-logo1.png" />
+  <!-- Structured data to help Google recognize your logo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Jaydev Associates",
+    "url": "https://www.jaydevassociates.com",
+    "logo": "https://www.jaydevassociates.com/favicon-32x32.png"
+  }
+  </script>
 
-<!-- Optional: Structured data to help Google recognize your logo -->
-        <script type="application/ld+json">
-        {
-         "@context": "https://schema.org",
-         "@type": "Organization",
-         "name": "Jaydev Associates",
-         "url": "https://www.jaydevassociates.com",
-         "logo": "https://www.jaydevassociates.com/jaydev-logo1.png"
-        }
-    </script>
+  <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
+  <script src="https://unpkg.com/rrweb@latest/dist/rrweb.min.js"></script>
+  <script src="https://d2adkz2s9zrlge.cloudfront.net/rrweb-recorder-20250919-1.js"></script>
 
+  <script>
+    if (window.self !== window.top && '%REACT_APP_ENABLE_VISUAL_EDITS%' === 'true') {
+      var debugScript = document.createElement('script');
+      debugScript.src = 'https://assets.emergent.sh/scripts/debug-monitor.js';
+      document.head.appendChild(debugScript);
 
+      window.tailwind = window.tailwind || {};
+      tailwind.config = { corePlugins: { preflight: false } };
 
-        <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
-        <!--
-        These two scripts have been added for the testing, please do not edit or remove them
-        -->
-        <script src="https://unpkg.com/rrweb@latest/dist/rrweb.min.js"></script>
-        <script src="https://d2adkz2s9zrlge.cloudfront.net/rrweb-recorder-20250919-1.js"></script>
-        <!--
-        These two scripts have been added for the Visual Edits, please do not edit or remove them
-        -->
-        <script>
-            // Only load visual edit scripts when inside an iframe and visual edits are enabled
-            if (window.self !== window.top && '%REACT_APP_ENABLE_VISUAL_EDITS%' === 'true') {
-                // Load debug monitor script
-                var debugScript = document.createElement('script');
-                debugScript.src = 'https://assets.emergent.sh/scripts/debug-monitor.js';
-                document.head.appendChild(debugScript);
+      var tailwindScript = document.createElement('script');
+      tailwindScript.src = 'https://cdn.tailwindcss.com';
+      document.head.appendChild(tailwindScript);
+    }
+  </script>
+</head>
 
-                // Configure Tailwind
-                window.tailwind = window.tailwind || {};
-                tailwind.config = {
-                    corePlugins: { preflight: false },
-                };
-
-                // Load Tailwind CDN
-                var tailwindScript = document.createElement('script');
-                tailwindScript.src = 'https://cdn.tailwindcss.com';
-                document.head.appendChild(tailwindScript);
-            }
-        </script>
-    </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
